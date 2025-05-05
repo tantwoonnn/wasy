@@ -132,6 +132,8 @@ public class User extends javax.swing.JFrame {
 
     private void studentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_studentActionPerformed
         // TODO add your handling code here:
+        new StudentLogin().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_studentActionPerformed
 
     private void teacherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_teacherActionPerformed
