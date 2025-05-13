@@ -142,7 +142,7 @@ public class AnnounceStudent extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(jTable2);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 40, -1, -1));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(552, 40, 430, -1));
 
         jTable1.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -168,9 +168,9 @@ public class AnnounceStudent extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 480, 80, 60));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 460, 80, 70));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/By registering, You agree to the Terms, Conditions and Policies of Borcelle & Privacy Policy (2).png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/By registering, You agree to the Terms, Conditions and Policies of Borcelle & Privacy Policy_1.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();

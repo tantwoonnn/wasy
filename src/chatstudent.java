@@ -84,6 +84,7 @@ String username = "Student"; // or pass from login later
         jLabel2 = new javax.swing.JLabel();
         textArea1 = new java.awt.TextArea();
         scrollPane1 = new java.awt.ScrollPane();
+        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -93,7 +94,7 @@ String username = "Student"; // or pass from login later
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 410, 450, 40));
 
         jButton1.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Send");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,7 +112,15 @@ String username = "Student"; // or pass from login later
         getContentPane().add(textArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 90, 550, 320));
         getContentPane().add(scrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 90, 550, 320));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/By registering, You agree to the Terms, Conditions and Policies of Borcelle & Privacy Policy (2).png"))); // NOI18N
+        jButton2.setContentAreaFilled(false);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 460, 100, 60));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/By registering, You agree to the Terms, Conditions and Policies of Borcelle & Privacy Policy_1.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
@@ -119,8 +128,8 @@ String username = "Student"; // or pass from login later
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String message = jTextField1.getText().trim();
-
-        String[] badWords = {"bobo", "kamote", "tanga", "sex", "tarantado", "gago", "kupal", "tite", "pepe"};
+ 
+        String[] badWords = {"bobo", "kamote", "tanga", "sex", "tarantado", "gago", "kupal", "tite", "pepe", "putanginamo", "dana", "umay"};
         boolean containsBadWord = false;
         for (String word : badWords) {
             if (message.toLowerCase().contains(word)) {
@@ -147,6 +156,12 @@ String username = "Student"; // or pass from login later
             }
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        new StudentHome().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -185,6 +200,7 @@ String username = "Student"; // or pass from login later
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField jTextField1;

@@ -86,11 +86,12 @@ loadMessages();
         textArea1 = new java.awt.TextArea();
         scrollPane1 = new java.awt.ScrollPane();
         jScrollBar1 = new javax.swing.JScrollBar();
-        textArea1 = new java.awt.TextArea();
-        textArea1 = new java.awt.TextArea();
-        textArea1 = new java.awt.TextArea();
-        textArea1 = new java.awt.TextArea();
-        textArea1 = new java.awt.TextArea();
+        textArea2 = new java.awt.TextArea();
+        textArea3 = new java.awt.TextArea();
+        textArea4 = new java.awt.TextArea();
+        textArea5 = new java.awt.TextArea();
+        textArea6 = new java.awt.TextArea();
+        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -102,7 +103,7 @@ loadMessages();
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 20, 160, 50));
 
         jButton1.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Send");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -121,29 +122,37 @@ loadMessages();
         scrollPane1.setForeground(new java.awt.Color(255, 0, 0));
         scrollPane1.add(jScrollBar1);
 
-        textArea1.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        textArea1.setText("awdawdawdawd");
-        getContentPane().add(textArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 550, 330));
+        textArea2.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        textArea2.setText("awdawdawdawd");
+        scrollPane1.add(textArea2);
 
-        textArea1.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        textArea1.setText("awdawdawdawd");
-        getContentPane().add(textArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 550, 330));
+        textArea3.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        textArea3.setText("awdawdawdawd");
+        scrollPane1.add(textArea3);
 
-        textArea1.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        textArea1.setText("awdawdawdawd");
-        getContentPane().add(textArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 550, 330));
+        textArea4.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        textArea4.setText("awdawdawdawd");
+        scrollPane1.add(textArea4);
 
-        textArea1.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        textArea1.setText("awdawdawdawd");
-        getContentPane().add(textArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 550, 330));
+        textArea5.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        textArea5.setText("awdawdawdawd");
+        scrollPane1.add(textArea5);
 
-        textArea1.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        textArea1.setText("awdawdawdawd");
-        getContentPane().add(textArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 550, 330));
+        textArea6.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        textArea6.setText("awdawdawdawd");
+        scrollPane1.add(textArea6);
 
         getContentPane().add(scrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 550, 330));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/By registering, You agree to the Terms, Conditions and Policies of Borcelle & Privacy Policy (2).png"))); // NOI18N
+        jButton2.setContentAreaFilled(false);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 460, 100, 60));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/By registering, You agree to the Terms, Conditions and Policies of Borcelle & Privacy Policy_1.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
@@ -180,6 +189,12 @@ loadMessages();
         }
     }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        new Teacher().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -218,11 +233,17 @@ loadMessages();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollBar jScrollBar1;
     private javax.swing.JTextField jTextField1;
     private java.awt.ScrollPane scrollPane1;
     private java.awt.TextArea textArea1;
+    private java.awt.TextArea textArea2;
+    private java.awt.TextArea textArea3;
+    private java.awt.TextArea textArea4;
+    private java.awt.TextArea textArea5;
+    private java.awt.TextArea textArea6;
     // End of variables declaration//GEN-END:variables
 }
