@@ -168,6 +168,8 @@ public class User extends javax.swing.JFrame {
 
     private void adminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminActionPerformed
         // TODO add your handling code here:
+        new AdminLogin().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_adminActionPerformed
 
     /**

@@ -198,7 +198,6 @@ public class Announce extends javax.swing.JFrame {
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 460, 80, 70));
 
         jTable2.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        jTable2.setForeground(new java.awt.Color(0, 0, 0));
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
